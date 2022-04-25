@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <button id="button1" class="buttons" onclick="alert('Hello')">Click me.</button>
+
+    <button id="button2" class="buttons" onclick="myFunction()">Click me.</button>
+
+    <button id="button3" class="buttons" onclick="changeBorder()">Click me last.</button>
+
+    <div onmouseover="this.style.backgroundColor='red'">myDIV.</div>
+</body>
+
+<script>
+    let button1 = document.getElementById("button1");
+    button1.style.backgroundColor = "orange"
+
+    function changeBorder(){
+    document.getElementById("button2").style.border = "5px blue solid";
+}
+    // document.getElementById("button1").style.backgroundColor = "orange"
+</script>
+
+</html>
+</DOCTYPE>
+<!-- 
+    EXERCISES:
+
+    1. The <button> element with id "button1" should do something when someone clicks on it. Try to fix it!
+    
+    2. When the button with id "button2" is clicked, the function "myFunction" should be executed.
+
+    3. The <div> element should turn red when someone moves the mouse over it.
+
+    4. Using JavaScript NOT CSS, change the background color (CSS) of the button with id button1 to orange.
+
+    5. Create a function called changeBorder that will change the border thickness of 
+    the button with button id2 to 5px width and
+    the border color to blue whenever and wherever the function is invoked (called).
+
+    6. Using JavaScript NOT CSS, change the border (CSS) of the button with id button2 to 5px width 
+    and border color to blue when the button with id button3 is clicked. 
+    Make sure to use your function you created in #5.
+-->
